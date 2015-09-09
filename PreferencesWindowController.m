@@ -20,6 +20,11 @@
 @synthesize pauseOnSleepButton;
 @synthesize pauseOnScreensaverButton;
 
+@synthesize showCountdownButton;
+@synthesize countdownHourValueField;
+@synthesize countdownMinValueField;
+@synthesize countdownSecValueField;
+
 - (id)initWithWindow:(NSWindow *)window
 {
     self = [super initWithWindow:window];
@@ -42,6 +47,11 @@
     
     [self.pauseOnSleepButton bind:NSValueBinding toObject:defaults withKeyPath:@"values.pauseOnSleep" options:nil];
     [self.pauseOnScreensaverButton bind:NSValueBinding toObject:defaults withKeyPath:@"values.pauseOnScreensaver" options:nil];
+    
+    [self.showCountdownButton bind:NSValueBinding toObject:defaults withKeyPath:@"values.showCountdown" options:nil];
+    [self.countdownHourValueField bind:NSValueBinding toObject:defaults withKeyPath:@"values.countdownHourValue" options:nil];
+    [self.countdownMinValueField bind:NSValueBinding toObject:defaults withKeyPath:@"values.countdownMinValue" options:nil];
+    [self.countdownSecValueField bind:NSValueBinding toObject:defaults withKeyPath:@"values.countdownSecValue" options:nil];
     
     [self.startPauseShortcutRecorder clearButtonRect];
     

@@ -6,5 +6,13 @@
 	<true/>
 	<key>pauseOnSleep</key>
 	<true/>
+	<key>showCountdown</key>
+	<false/>
+	<key>countdownHourValue</key>
+	<integer>0</integer>
+	<key>countdownSecValue</key>
+	<integer>0</integer>
+	<key>countdownMinValue</key>
+	<integer>15</integer>
 </dict>
 </plist>

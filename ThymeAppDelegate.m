@@ -417,6 +417,8 @@
     }
 }
 
+#pragma mark Countdown
+
 #pragma mark NSApplication
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
